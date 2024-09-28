@@ -1,44 +1,44 @@
-# Meta Prompting
+# 元提示
 
-## Introduction
+## 简介
 
-Meta Prompting is an advanced prompting technique that focuses on the structural and syntactical aspects of tasks and problems rather than their specific content details. This goal with meta prompting is to construct a more abstract, structured way of interacting with large language models (LLMs), emphasizing the form and pattern of information over traditional content-centric methods.
+元提示（Meta Prompting）是一种高级的提示技术，它关注的是任务和问题的结构和语法方面，而不是它们的具体内容细节。元提示的目标是构建一种更为抽象和结构化的与大型语言模型交互的方式，相比传统的以内容为中心的方法，更强调信息的形式和模式。
 
-## Key Characteristics
+## 关键特征
 
-According to [Zhang et al. (2024)](https://arxiv.org/abs/2311.11482), the key characteristics of meta prompting can be summarized as follows:
+根据 [Zhang et al. (2024)](https://arxiv.org/abs/2311.11482), 元提示（Meta Prompting）的特征总结如下:
 
-**1. Structure-oriented**: Prioritizes the format and pattern of problems and solutions over specific content.
+**1. 以结构为导向**: 优先考虑问题和回答的形式和模式，而不是具体的内容
 
-**2. Syntax-focused**: Uses syntax as a guiding template for the expected response or solution.
+**2. 关注语法**: 使用语法作为预期响应或回答的指导模板
 
-**3. Abstract examples**: Employs abstracted examples as frameworks, illustrating the structure of problems and solutions without focusing on specific details.
+**3. 抽象示例**: 运用抽象示例作为框架，展示问题和回答的结构，而不专注于具体的细节
 
-**4. Versatile**: Applicable across various domains, capable of providing structured responses to a wide range of problems.
+**4. 灵活**: 适用于多种领域，能为多种类的问题提供结构化的响应
 
-**5. Categorical approach**: Draws from type theory to emphasize the categorization and logical arrangement of components in a prompt.
+**5. 分类方法**: 借助类型论(type theory) 来强调提示中组元素的分类和逻辑排列
 
-## Advantages over Few-Shot Prompting
+## 相较于少样本提示的优势
 
-[Zhang et al., 2024](https://arxiv.org/abs/2311.11482) report that meta prompting and few-shot prompting are different in that it meta prompting focuses on a more structure-oriented approach as opposed to a content-driven approach which few-shot prompting emphasizes. 
+[Zhang et al., 2024](https://arxiv.org/abs/2311.11482) 指出，元提示和少样本提示的不同在于，元提示侧重于更加结构导向的方法，而少样本提示则强调内容驱动的方法
 
-The following example obtained from [Zhang et al. (2024)](https://arxiv.org/abs/2311.11482) demonstrates the difference between a structured meta prompt and a few-shot prompt for solving problems from the MATH benchmark:
+以下 [Zhang et al. (2024)](https://arxiv.org/abs/2311.11482) 中提及的示例展示了结构化的元提示与少样本提示在解决 MATH benchmark时的不同:
 
 !["Meta Prompting"](../../img/techniques/meta-prompting.png)
 
-The advantages of Meta Prompting over few-shot promoting include:
+元提示相比少样本提示的优势包括:
 
-**1. Token efficiency**: Reduces the number of tokens required by focusing on structure rather than detailed content.
+**1. 词元效率 (Token efficiency)**: 通过更专注结构而非内容细节来减少token的用量
 
-**2. Fair comparison**: Provides a more fair approach for comparing different problem-solving models by minimizing the influence of specific examples.
+**2. 公平比较 (Fair comparison)**: 通过减少特定示例的影响，为比较不同的问题解决模型提供了一种更公平的方法
 
-**3. Zero-shot efficacy**: Can be viewed as a form of zero-shot prompting, where the influence of specific examples is minimized.
+**3. 零样本效能 (Zero-shot efficacy)**: 可以被视为一种零样本提示的形式，其中特定示例的影响被最小化
 
-## Applications
+## 应用
 
-By focusing on the structural patterns of problem-solving, Meta Prompting offers a clear roadmap for navigating complex topics, enhancing the reasoning capabilities of LLMs across various domains.
+通过关注问题解决的结构模式，元提示为解决复杂主题提供了清晰的路线图，增强了大型语言模型（LLMs）在不同领域的推理能力
 
-It's important to note that meta prompting also assumes that the LLM has innate knowledge about the specific task or problem being addressed. As LLMs can generalize to a unseen tasks, it is possible that they can be leveraged with meta prompting but performance might deteriorate with more unique and novel tasks as is the case with zero-shot prompting. 
+需要注意的是，元提示还假设大型语言模型对所解决的具体任务或问题具有内在的知识。由于大型语言模型可以泛化到未见过的任务，因此可以通过元提示加以利用，但在处理更具独特性和新颖性的任务时，性能可能会下降，就像零样本提示的情况一样。
 
-Applications where meta prompting can be beneficial include but not limited to complex reasoning tasks, mathematical problem-solving, coding challenges, theoretical queries.
+元提示可以带来帮助的应用包括但不限于复杂的推理任务、数学问题解决、编程挑战、理论查询等。
 
